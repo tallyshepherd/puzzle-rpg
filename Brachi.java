@@ -1,6 +1,4 @@
-
-public class Brachi extends MainCharacter{
-	/**
+/**
 	 * This is the class Brachi, one of the three dragons you can use. This subclass extends the Maincharacter and holds the methods for leaderskill and his skill
 	 * @param name
 	 * @param hp
@@ -9,15 +7,15 @@ public class Brachi extends MainCharacter{
 	 * @param fullhp
 	 */
 
+public class Brachi extends MainCharacter{
+
 	public Brachi(String name, int hp, double attack, int heal, int fullhp) {//Preshi's stats are the same as MainCharracter's stats
 		super(name, hp, attack, heal, fullhp);
 
 	}
 	
+	/*This method holds commands for Preshi's skill, healing 50% of the missing health*/
 	public void skill(Enemies x) {
-		/**
-		 * This method holds commands for Preshi's skill, healing 50% of the missing health
-		 */
 		System.out.println("\nBrachi uses his skill!");//informs user their character is using their skill
 		double y = (this.getFullHp()-this.getHp()) * 0.5;//double y holds the heal amount for preshi
 		if(y == 0) {//if y == 0 it means user is already at full health
@@ -32,16 +30,14 @@ public class Brachi extends MainCharacter{
 		
 	}
 
+	/* This method returns whether Brachi's leaderskill activates or not depending on the combo amount */
 	
 	public boolean leaderSkill(int combonum) {
-		/**
-		 * This method returns whether Brachi's leaderskill activates or not depending on the combo amount
-		 */
-		if (combonum >= 3) {//if user performed 3 combos or more leaderskill activates, returns true
+		if (combonum >= 3) {			//if user performed 3 combos or more leaderskill activates, returns true
 			return true;
 		}
 		else
-			return false;//other wise returns false
+			return false;			//other wise returns false
 			
 	}
 
