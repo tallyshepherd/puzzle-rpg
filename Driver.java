@@ -11,10 +11,10 @@ public class Driver {
 
 		String input = "";//user input for the starting menu
 
-		System.out.println("Welcome to Tali Shepherd’s Dragons and Puzzles! "//welcomes user to the video game, asks user if they want the tutorial or if they want to start the game
-							+ "\nThis is a dungeon based puzzle game, and parody of the best selling game by Gunho studios, Puzzle and Dragons. "
-							+ "\nIf it is your first time playing this game, refer to the explanation bookmarks below. "
-							+ "\nOtherwise press “s” to start your adventure!\n");
+		System.out.println("Welcome to Dragons and Puzzles! "//welcomes user to the video game, asks user if they want the tutorial or if they want to start the game
+				+ "\nThis is a dungeon based puzzle game, and parody of the best selling game by Gunho studios, Puzzle and Dragons. "
+				+ "\nIf it is your first time playing this game, refer to the explanation bookmarks below. "
+				+ "\nOtherwise press “s” to start your adventure!\n");
 		
 		System.out.println("\n1. The main objective (click 1)\n2. How to play (click 2)\n");//outputs options for the tutorial
 		input = in.next();//user inputs their choice
@@ -23,19 +23,19 @@ public class Driver {
 						
 		if (input.equals("1")) {//shows chapter one of tutorial
 			System.out.println("\nThe main objective of the game is to clear the dungeon. To do this you must defeat all the monsters in the dungeon. "
-								+ "\nYou can select the dungeon which you want to challenge from the mainmenu. \n"
-								+"Each dungeon varies in difficulty, and some dragons may be better equipped for some dungeons."
-								+ "\nIf your health hits 0 then its gameover! Be sure to look out for your health!");}
+					+ "\nYou can select the dungeon which you want to challenge from the mainmenu. \n"
+					+"Each dungeon varies in difficulty, and some dragons may be better equipped for some dungeons."
+					+ "\nIf your health hits 0 then its gameover! Be sure to look out for your health!");}
 		
 		else if (input.equals("2")){//shows chapter two of tutorial
 			System.out.println(		"\n1. To attack the enemies you need to connect three blocks with the same shapes together like candy crush, simple as that. "
-									+ "\nOne three shaped connection is a combo, the more combos you make, the higher your attack will be."
-									+ "\nYou will be shown a puzzle when you enter a dungeon, you can move a block up,down,right or left three times!"
-									+ "\n(IMPORTANT) The blocks can only be deleted when you connect them by three, this is meant to make the combo making more challenging. "
-								    + "\n2. You can also use your monster’s skills! All monsters have one skill and one leader skill. Make sure to read the monster’s skills before using them. "
-								    + "\nAll dragons have the skill 'dragon breath' this will allow your dragon to attack the enemy with 20 times its base damage!"
-								    + "\nYour dragon can also heal! Be careful however, as each time you heal the enemy's attack turn decreases by one!"
-								    + "\nTry to play around your monster’s leader skill as activating it will make the game progress smoothly.");}
+							+ "\nOne three shaped connection is a combo, the more combos you make, the higher your attack will be."
+							+ "\nYou will be shown a puzzle when you enter a dungeon, you can move a block up,down,right or left three times!"
+							+ "\n(IMPORTANT) The blocks can only be deleted when you connect them by three, this is meant to make the combo making more challenging. "
+						        + "\n2. You can also use your monster’s skills! All monsters have one skill and one leader skill. Make sure to read the monster’s skills before using them. "
+						        + "\nAll dragons have the skill 'dragon breath' this will allow your dragon to attack the enemy with 20 times its base damage!"
+							+ "\nYour dragon can also heal! Be careful however, as each time you heal the enemy's attack turn decreases by one!"
+							+ "\nTry to play around your monster’s leader skill as activating it will make the game progress smoothly.");}
 		
 		
 		Thread.sleep(1500);//pause before next output
@@ -56,10 +56,10 @@ public class Driver {
 			System.out.println("Main Menu"); //outputs the main menu, options of dungeons for the user to choose from
 			System.out.println("Select the Dungeon to play!\n"); 
 
-			System.out.println("The Beginning Tower 	(Difficulty:Easy)  (Click 1)"); 
+			System.out.println("The Beginning Tower 	(Difficulty:Easy) (Click 1)"); 
 			System.out.println("The Dusk Valley 	(Difficulty:Medium) (Click 2)"); 
-			System.out.println("The Demon Lord's Castle (Difficulty:Hard)   (Click 3)"); 
-			System.out.println("\nExit Game   (Click 4)\n");
+			System.out.println("The Demon Lord's Castle (Difficulty:Hard) (Click 3)"); 
+			System.out.println("\nExit Game (Click 4)\n");
 
 			selection = in.nextInt();//user choice is stored
 			
@@ -78,6 +78,10 @@ public class Driver {
 				break;
 			}
 			
+			else {
+				System.out.println("You must choose a valid option!");
+			}
+				
 		}
 		System.out.println("\nThanks for playing Dragons and Puzzles!");//says farewell to the user 
 		}
@@ -150,22 +154,22 @@ public static void DemonCastle () throws InterruptedException {
 	System.out.println("\nChoose your dragon: ");//asks for user input
 	Thread.sleep(1500);//pause before next output
 
-	System.out.println("\n Tyra: 		(Click 1 to choose)"//outputs the available dragons to choose, including their stats and skills
+	System.out.println("\n Tyra: (Click 1 to choose)"//outputs the available dragons to choose, including their stats and skills
 						+ "\n Leader Skill: Attack triples when you make 6 or more combos"
 						+ "\n Skill: Deals 10x your base damage to enemy"
 						+ "\n Stats: HP: 500 Damage: 120 Heal: 30\n");
 	Thread.sleep(1500);//pause before next output
 
-	System.out.println("\n Preshi: 	(Click 2 to choose)"
+	System.out.println("\n Preshi: (Click 2 to choose)"
 						+ "\n Leader Skill: Attack dealt is 2x stronger when your health is above 50%"
 						+ "\n Skill: Heal 100HP"
 						+ "\n Stats: HP: 800 Damage: 80 Heal: 150\n");
 	Thread.sleep(1500);//pause before next output
 
-	System.out.println("\n Brachi: 	(Click 3 to choose)"
+	System.out.println("\n Brachi: (Click 3 to choose)"
 						+ "\n Leader Skill: Each time you perform 3 combos or more, heal 50HP"
 						+ "\n Skill: Heals 50% of missing health"
-						+ "\n Stats: HP: 1000   Damage: 50   Heal: 200\n");
+						+ "\n Stats: HP: 1000 Damage: 50 Heal: 200\n");
 
 	choice = in.nextInt();//user choice is stored in variable
 	
