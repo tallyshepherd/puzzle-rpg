@@ -15,7 +15,7 @@ public class Preshi extends MainCharacter{
 
 	public boolean leaderSkill(int combonum) {
 		/**
-		 * This method returns whether Preshi's leaderskill activates or not depending on the combo amount
+		 * This is a method returns whether Preshi's leaderskill activates or not depending on the combo amount
 		 */
 		if(combonum >= 3) {//if you made 3 or more combos, then leader skill activates
 			return true;
