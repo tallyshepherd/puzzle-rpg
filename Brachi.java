@@ -1,5 +1,5 @@
 /**
-	 * This is the class Brachi, one of the three dragons you can use. This subclass extends the Maincharacter and holds the methods for leaderskill and his skill
+	 * This is the class Brachi, one of the three dragons you can use as a main character. This subclass extends the Maincharacter and holds the methods for leaderskill and his skill
 	 * @param name
 	 * @param hp
 	 * @param attack
