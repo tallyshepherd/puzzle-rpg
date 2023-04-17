@@ -1,7 +1,7 @@
 
 public class Tyra extends MainCharacter{
 	/**
-	 * This is the class Tyran, one of the three dragons you can use. This subclass extends the Maincharacter and holds the methods for leaderskill and his skill
+	 * This is the class Tyra, a fire class dragon one of the three dragons you can use. This subclass extends the Maincharacter and holds the methods for leaderskill and his skill
 	 * @param name
 	 * @param hp
 	 * @param attack
